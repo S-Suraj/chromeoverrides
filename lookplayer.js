@@ -805,7 +805,6 @@ function getPlayerOptions(a, b, g) {
         }
     }
 }
-MoviesPlay();
 
 function MoviesPlay() {
     function a(f) {
