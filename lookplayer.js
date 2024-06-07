@@ -805,7 +805,8 @@ function getPlayerOptions(a, b, g) {
         }
     }
 }
-MoviesPlay() ;
+MoviesPlay();
+
 function MoviesPlay() {
     function a(f) {
         window.videoJS = videojs("video_player", getPlayerOptions(window.movie_storage.movie_poster, window.movie_storage.backdrop_huge, window.movie_storage.title + " (" + window.movie_storage.year + ")"), function() {
@@ -1743,54 +1744,54 @@ function vjsCreateSubtitlesButton(a) {
 }
 
 function initPrePlaybackCounter(a) {
-    a=0;
+    a = 0;
     var b, g = 160 * Math.PI,
         f = document.querySelector(".player-pre-init-ads"),
         c = document.querySelectorAll(".player-pre-init-ads--counter__value"),
         l = document.querySelector(".player-pre-init-ads--back"),
         e = document.querySelector(".player-pre-init-ads--close"),
         d = document.querySelector("#progress-val");
-        f.classList.add("finished");
- /*   d.style.strokeDasharray = "0, " + g + "px";
-    "undefined" !== typeof window._progressInterval && clearInterval(window._progressInterval);
-    var h = 0,
-        k = g / (50 * a);
-    window._progressInterval =
-        setInterval(function() {
-            h += k;
-            d.style.strokeDasharray = h + "px, " + g + "px";
-            h >= g && clearInterval(window._progressInterval)
-        }, 20);
-    var m = new Promise(function(n, q) {
-        b = q;
-        var p = a;
-        if (1 > p || "number" === typeof window._preInitAdsTimestamp && 5E4 > Date.now() - window._preInitAdsTimestamp) return n();
-        f.classList.remove("hidden");
-        f.classList.remove("finished");
-        "undefined" !== typeof window._counterTimeout && (clearInterval(window._counterTimeout), window._counterTimeout = void 0);
-        e.onclick = function() {
-            window._preInitAdsTimestamp = Date.now();
-            f.classList.add("hidden");
-            return n()
-        };
-        l.onclick = function() {
-            window._preInitAdsTimestamp = Date.now();
-            f.classList.add("hidden");
-            return n()
-        };
-        for (q = 0; q < c.length; q++) c[q].innerHTML = p;
-        window._counterTimeout = setInterval(function() {
-            --p;
-            for (var r = 0; r < c.length; r++) c[r].innerHTML = p;
-            0 >= p && (clearInterval(window._counterTimeout), f.classList.add("finished"))
-        }, 1E3)
-    });
-    m.cancel = function() {
-        clearInterval(window._counterTimeout);
-        window._counterTimeout = void 0;
-        b()
-    };
-    return m*/
+    f.classList.add("finished");
+    /*   d.style.strokeDasharray = "0, " + g + "px";
+       "undefined" !== typeof window._progressInterval && clearInterval(window._progressInterval);
+       var h = 0,
+           k = g / (50 * a);
+       window._progressInterval =
+           setInterval(function() {
+               h += k;
+               d.style.strokeDasharray = h + "px, " + g + "px";
+               h >= g && clearInterval(window._progressInterval)
+           }, 20);
+       var m = new Promise(function(n, q) {
+           b = q;
+           var p = a;
+           if (1 > p || "number" === typeof window._preInitAdsTimestamp && 5E4 > Date.now() - window._preInitAdsTimestamp) return n();
+           f.classList.remove("hidden");
+           f.classList.remove("finished");
+           "undefined" !== typeof window._counterTimeout && (clearInterval(window._counterTimeout), window._counterTimeout = void 0);
+           e.onclick = function() {
+               window._preInitAdsTimestamp = Date.now();
+               f.classList.add("hidden");
+               return n()
+           };
+           l.onclick = function() {
+               window._preInitAdsTimestamp = Date.now();
+               f.classList.add("hidden");
+               return n()
+           };
+           for (q = 0; q < c.length; q++) c[q].innerHTML = p;
+           window._counterTimeout = setInterval(function() {
+               --p;
+               for (var r = 0; r < c.length; r++) c[r].innerHTML = p;
+               0 >= p && (clearInterval(window._counterTimeout), f.classList.add("finished"))
+           }, 1E3)
+       });
+       m.cancel = function() {
+           clearInterval(window._counterTimeout);
+           window._counterTimeout = void 0;
+           b()
+       };
+       return m*/
 }
 
 function renderPlayerMessage(a, b) {
@@ -11563,7 +11564,7 @@ $jscomp.polyfill("Number.MAX_SAFE_INTEGER", function() {
                             }
                             h = h.parentNode
                         }
-                    var g = d.call(this, null, e, l) || this;
+                var g = d.call(this, null, e, l) || this;
                 g.boundDocumentFullscreenChange_ = function(p) {
                     return g.documentFullscreenChange_(p)
                 };
@@ -21422,7 +21423,7 @@ $jscomp.polyfill("Number.MAX_SAFE_INTEGER", function() {
                                         O.audio = [], Kk(v, C,
                                             O), 0 === O.audio.length && delete O.audio
                                 }
-                                v = O
+                            v = O
                         }
                         if (!v || !v.audio && !v.video) return null;
                         ap(v, z);
