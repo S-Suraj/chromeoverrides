@@ -902,6 +902,7 @@ function MoviesPlay() {
         })
     }
     new HttpClient;
+    MoviesPlay();
     var g = function(f) {
         var c, l, e, d, h;
         return $jscomp.asyncExecutePromiseGeneratorProgram(function(k) {
