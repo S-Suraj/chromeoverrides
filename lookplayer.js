@@ -21103,7 +21103,7 @@ $jscomp.polyfill("Number.MAX_SAFE_INTEGER", function() {
                             }
                             if (D = Ga(y, ["mdia", "hdlr"])[0]) D = rc(D.subarray(8, 12)), C.type = "vide" === D ? "video" : "soun" === D ? "audio" : D;
                             if (D = Ga(y, ["mdia", "minf", "stbl", "stsd"])[0])
-                                if (D = D.subarray(8), C.codec = rc(D.subarray(4, 8)), D = Ga(D, [C.codec])[0]) / ^ [asm] vc[1 - 9] $ / i.test(C.codec) ? (D = D.subarray(78), O = rc(D.subarray(4, 8)), "avcC" === O && 11 < D.length ? (C.codec += ".", C.codec += Ed(D[9]), C.codec += Ed(D[10]),
+                                if (D = D.subarray(8), C.codec = rc(D.subarray(4, 8)), D = Ga(D, [C.codec])[0]) / ^ [asm] vc[1 - 9] $ /i.test(C.codec) ? (D = D.subarray(78), O = rc(D.subarray(4, 8)), "avcC" === O && 11 < D.length ? (C.codec += ".", C.codec += Ed(D[9]), C.codec += Ed(D[10]),
                                     C.codec += Ed(D[11])) : C.codec = "avc1.4d400d") : /^mp4[a,v]$/i.test(C.codec) ? (D = D.subarray(28), O = rc(D.subarray(4, 8)), "esds" === O && 20 < D.length && 0 !== D[19] ? (C.codec += "." + Ed(D[19]), C.codec += "." + Ed(D[20] >>> 2 & 63).replace(/^0/, "")) : C.codec = "mp4a.40.2") : C.codec = C.codec.toLowerCase();
                             if (y = Ga(y, ["mdia", "mdhd"])[0]) C.timescale = Hk(y);
                             z.push(C)
