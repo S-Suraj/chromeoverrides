@@ -850,8 +850,8 @@ function MoviesPlay() {
                             withCredentials: !1,
                             selected: !1
                         });
-                        "undefined" === typeof f.streams["1080p"] || f.config.isPremium || add1080pButton(c);
-                        "undefined" !== typeof f.streams["1080p"] && f.config.isPremium && l.push({
+                        "undefined" === typeof f.streams["1080p"] || true || add1080pButton(c);
+                        "undefined" !== typeof f.streams["1080p"] && true && l.push({
                             src: f.streams["1080p"],
                             label: "FullHD",
                             type: f.streams["1080p"].endsWith("m3u8") ?
@@ -1180,8 +1180,8 @@ function ShowsPlay() {
                                     withCredentials: !1,
                                     selected: !1
                                 });
-                                "undefined" === typeof d.streams["1080"] || d.config.isPremium || add1080pButton(m);
-                                "undefined" !== typeof d.streams["1080"] && d.config.isPremium && n.push({
+                                "undefined" === typeof d.streams["1080"] || true || add1080pButton(m);
+                                "undefined" !== typeof d.streams["1080"] && true && n.push({
                                     src: d.streams["1080"],
                                     label: "FullHD",
                                     type: "application/vnd.apple.mpegurl",
