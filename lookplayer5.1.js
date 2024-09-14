@@ -1583,15 +1583,15 @@ function addQualityButton(a, b) {
         a.play()
     });
     a.on("playerSourcesChanged", function() {
-        for (var f = 0; f < b.length; f++) {
-            var g = $('<li class="vjs-menu-item" id="user-limited-notify-button">' + b[f].label + "</li>");
-            g.on("click", function() {
-                null === document.querySelector(".only-prem-1080p") && (700 < window.screen.width ? $(".vjs-lookmovie").append(get1080pMessage()) : $(".vjs-lookmovie").append(get1080pMessageMobile()));
-                a.pause();
-                videoJS.controlBar.qualitySelector.handleClick()
-            });
-            $(".vjs-settings-quality-menu .vjs-menu-content").append(g)
-        }
+        // for (var f = 0; f < b.length; f++) {
+        //     var g = $('<li class="vjs-menu-item" id="user-limited-notify-button">' + b[f].label + "</li>");
+        //     g.on("click", function() {
+        //         null === document.querySelector(".only-prem-1080p") && (700 < window.screen.width ? $(".vjs-lookmovie").append(get1080pMessage()) : $(".vjs-lookmovie").append(get1080pMessageMobile()));
+        //         a.pause();
+        //         videoJS.controlBar.qualitySelector.handleClick()
+        //     });
+        //     $(".vjs-settings-quality-menu .vjs-menu-content").append(g)
+        // }
     })
 }
 function get1080pMessage() {
